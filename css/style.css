@@ -3,76 +3,110 @@ font-family: "Camcorder";
 src: url("../css/fonts/Camcorder.ttf");
 }
 
-.nav{
-	height: 50px;
-	
-	font-family: 'Camcorder';
+body {
+  font-family: 'Camcorder';
+  font-weight: 300;
 }
-.nav div{
-	display: inline-block;
-	position:absolute;
-	left:0;
-	padding:15px;
-	font-size: 20px;
-	color:white;
+
+header {
+  padding: 20px 0;
 }
-.nav ul{
-	position:absolute;
-	right: 5px;
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
 }
-.nav ul li{
-	display:inline-block;
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+  color:#534659;
 }
-.nav ul li a{
-	color:white;
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
 }
-.home{
-	background:url("../images/background1.jpg");
-	background-size:cover;
-	height:100vh;
+header nav a, header a{
+  color:#534659;
 }
-.home .text-container{
-	text-align:center;
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	height:90vh;
-	color:white;
-	font-family: 'Camcorder';
+header nav p {
+  padding: 0 20px;
+  color:#534659;
+  margin: 0;
 }
-.about .about-content{
-	margin: 150px auto 0 auto;
-	width:500px;
-	color:white;
-	font-family: 'Camcorder';
+.backgroundimage{
+  background-image: url('../images/background1.jpg');
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  height: 75vh;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
 }
-.about .about-content h1{
-	text-align: center;
+.jumbotron {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
 }
-.about .about-content p{
-	text-align:justify;
+
+.backgroundimage h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
 }
-.services .services-content{
-	margin:80px auto 0 auto;
-	text-align: center;
-	color:white;
-	font-family: 'Camcorder';
+
+.backgroundimage h3 {
+  margin: 0 0 20px;
+  color: #fff;
 }
-.services-content .card-container ul{
-	padding: 0;
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
 }
-.services-content .card-container ul li{
-	list-style: none;
-	display:inline-block;
-	margin:20px;
-	width:300px;
+
+.col-md-6 {
+  margin: 0 0 30px;
 }
-.services-content .card-container ul li p{
-	text-align: justify;
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: #534659;
 }
-.contact .contact-content{
-	margin:; 80px auto 0 auto;
-	text-align: center;
-	color: white;
-	font-family: 'Camcorder';
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+}
+
+.btn-secondary {
+  background-color: #E8DFE0;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
 }
